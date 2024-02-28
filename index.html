@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+
+   <section class="container ">
+    <div class="board">
+        <div id="container" class="bird-container" onclick="count()"></div>
+    </div>
+    <div class="nav">
+        <div class="nav-container">
+            <h4>Tap the bird.</h4>
+            <h5>Click on a difficulty to start the game.</h5>
+            <div class="button-container" >
+                <button class="buttons" onclick="easyMode()">easy</button>
+                <button class="buttons" onclick="mediumMode()">medium</button>
+                <button class="buttons" onclick="hardMode()">hard</button>
+            </div>
+            <h4>Score</h4>
+            <div class="score">0</div>
+            <button class="buttons restart" onclick="restart()">Restart</button>
+        </div>
+    </div>
+   </section>
+
+   <section></section>
+   <script src="./main.js"></script>
+</body>
+</html>

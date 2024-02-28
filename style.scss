@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #596FB7;
+
+    display: flex;
+    height: 100vh;
+
+
+    .board{
+        width: 75%;
+        position: relative;
+
+        .bird-container{
+            height: 40px; 
+            width: 40px;
+            background-color: white;
+            border-radius: 50%;
+            background-image: url('./dove-solid.svg');
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            animation-name: example ;
+            display: none;
+        }
+
+        @keyframes example {
+            
+            0%{
+                top: 0;
+                left: 0;
+            }
+            10%{
+                top: 20%;
+                left: 50%;
+            }
+            20%{
+                top: 60%;
+                left: 80%;
+            }
+            30%{
+                top:80%;
+                left: 35%;
+            }
+            40%{
+                top: 20%;
+                left: 10%;
+            }
+            50%{
+                top: 25%;
+                left: 40%;
+            }
+            60%{
+                top: 50%;
+                left: 50%;
+            }
+            70%{
+                top: 60%;
+                left: 20%;
+            }
+            80%{
+                top: 29%;
+                left: 50%;
+            }
+            90%{
+                top: 10%;
+                left: 0%;
+            }
+            100%{
+                top: 70%;
+                left: 80%;
+            }
+
+        }
+        
+    }
+    .nav{
+        background-color: #11235A;
+        width: 25%;
+
+        .nav-container
+        {
+            margin: 60% auto;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .button-container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            
+            .buttons{
+                width: 30%;
+                border: 1px solid white;
+                padding: 3%;
+                background: transparent;
+                margin-top: 4%;
+                color: white;
+                border-radius: 10px;
+            }
+        }
+
+        .score{
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .restart{
+            width: 70%;
+            margin: auto;
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 5%;
+
+            border-radius: 15px;
+        }
+        
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+.container{
+    .nav{
+        .button-container{
+            flex-direction: column;
+            
+            .buttons{
+                width: 100%;
+            }
+        }
+
+        
+    }
+}
+}
